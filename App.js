@@ -32,10 +32,7 @@ const App = () => {
               source={{
                 uri: 'https://d1egxr9rlacnzd.cloudfront.net/unsafe/https://s3.ap-south-1.amazonaws.com/carinfo.cdn/cars/10/36/0/Omni.jpg',
               }}
-              style={{
-                aspectRatio: 1.767 / 1,
-                width: '100%' 
-              }}
+              style={styles.imageStyle}
             />
           </Card>
           <Ownership />
@@ -57,6 +54,10 @@ const styles = StyleSheet.create({
     width: '100%',
     margin: '5%',
     borderRadius: 5,
+  },
+  imageStyle: {
+    aspectRatio: 1.767 / 1,
+    width: '100%',
   },
 });
 
